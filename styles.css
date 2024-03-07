@@ -1,0 +1,78 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header, nav, main, footer {
+    padding: 20px;
+}
+
+header {
+    background-color: rgb(18, 139, 175);
+    color: #fff;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(18, 139, 175);
+}
+
+main {
+    margin: 20px auto;
+    width: 80%;
+}
+
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.admin-table th, .admin-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.admin-table th {
+    background-color: #f2f2f2;
+}
+
+.admin-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+footer {
+    background-color: rgb(18, 139, 175);
+    color: #fff;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 10px 0;
+}
+
+@media (max-width: 768px) {
+    main {
+        width: 90%;
+    }
+    .admin-table {
+        overflow-x: auto;
+    }
+}
